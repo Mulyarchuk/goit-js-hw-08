@@ -50,7 +50,7 @@ function onFormSubmit (evt){
     localStorage.removeItem(FEEDBACK_KEY);
 }
 saveMessage= JSON.parse(localStorage.getItem(FEEDBACK_KEY));
-    if(saveMessage){
+    if (saveMessage){
         input.value = saveMessage.email;
         textarea.value = saveMessage.message;
     };
