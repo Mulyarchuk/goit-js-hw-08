@@ -36,7 +36,7 @@ const formData = {};
 //         textarea.value = saveMessage.message|| ``;
 //     };
   
-
+populateTextarea();
 function onInput (evt) {
     
     localStorage.setItem(FEEDBACK_KEY, JSON.stringify(formData));
@@ -49,8 +49,9 @@ function onFormSubmit (evt){
     form.reset();
     localStorage.removeItem(FEEDBACK_KEY);
 }
+function populateTextarea() {
 saveMessage = JSON.parse(localStorage.getItem(FEEDBACK_KEY));
     if (saveMessage){
         input.value = saveMessage.email;
         textarea.value = saveMessage.message;
-    };
+    };}
