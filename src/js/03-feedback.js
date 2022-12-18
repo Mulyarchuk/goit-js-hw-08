@@ -29,9 +29,9 @@ formData [evt.target.name] = evt.target.value;
 console.log (formData)
 
 };
- saveNessage= JSON.parse(localStorage.getItem(FEEDBACK_KEY)) || {};
+ saveMessage= JSON.parse(localStorage.getItem(FEEDBACK_KEY)) || {};
     if(formData){
-        input.value = saveNessage.email|| ``;
-        textarea.value = saveNessage.message||``;
+        input.value = saveMessage.email|| ``;
+        textarea.value = saveMessage.message||``;
     }
     
